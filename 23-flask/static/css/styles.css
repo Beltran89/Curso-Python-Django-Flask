@@ -1,0 +1,253 @@
+/*Estilos Generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: none;
+    text-decoration: none;
+}
+
+.box p,.box h2,.box h3,.box ul{
+    margin-top:  50px;
+    margin-bottom: 50px;
+}
+
+.box ul, .box ol{
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+
+/*Estilos cabecera*/
+
+header{
+    width: 1200px;
+    height: 160px;
+    background-color: #23282B;
+    margin: auto;
+}
+
+#logotipo{
+    width: 60%;
+    height: 160px;
+    margin: 0 auto;
+}
+
+#logotipo img {
+    display:  block;
+    float: left;
+    width: 120px;
+    margin-top: 20px;
+}
+
+#logotipo h1{
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #FFF;
+    float: left;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+/*Estilos Barra Navegacion*/
+
+nav{
+    width: 1250px;
+    height: 40px;
+    background-color: #1B1F1E;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    box-shadow: 0px 22px 22px gray; /*Sombreado*/
+    font-size: 15px;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+nav ul li{
+    line-height: 40px;
+    float: left;
+}
+nav ul li a{
+    display: block;
+    padding-left:  20px;
+    padding-right: 10px;
+    color: #d1d4d6;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: #2ba777;
+    box-shadow: 0px 0px 5px #333333 inset; /*Sombreado*/
+    color: white;
+    transition: all 600ms;
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.esquina-izquierda{
+    display: block;
+    border-left:20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: left;
+}
+.esquina-derecha{
+    display: block;
+    border-right:20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: right;
+}
+.relleno-barra{
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background: #2B2F30;
+    float: left;
+}
+
+/*Estilo contenido central*/
+
+#content{
+    width: 1212px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+.rojo{
+    color: red;
+    box-shadow:  0px 0px 4px black;
+}
+.box{
+    background: white;
+    width: 90%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.box form input[type="text"],
+.box form textarea,
+.box form select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box form select{
+    width: 20%;
+    padding: 5px;
+
+}
+
+.box form label{
+    display: block;
+}
+
+
+.box form{
+    width: 50%;
+}
+.box form input[type="submit"],
+.box form input[type="button"],
+.box form button{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    background: #2ba977;
+    color : white;
+    border: 1px solid #444;
+    transition: 300ms all;
+}
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button:hover{
+    cursor: pointer;
+    background: #0f3828;
+    transition: 300ms all;
+}
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #1B1E1F;
+    border : 1px solid #333;
+    color : #d1d4d6;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px gray; 
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.barra-footer{
+    width: 1250px;
+    margin: 10px auto;
+}
+.esquina-izquierda-footer{
+    display: block;
+    border-left:20px solid  #2B2F30;
+    border-top: 20px solid transparent;
+    float: right;
+}
+.esquina-derecha-footer{
+    display: block;
+    border-right:20px solid #2B2F30;
+    border-top: 20px solid transparent;
+    float: left;
+}
+.relleno-barra-footer{
+    display: block;
+    width: 1210px;
+    height: 20px;
+    background: #2B2F30;
+    float: left;
+    color: White;
+    text-align: center;
+    font-style: italic;
+}
+
+.message,
+.alert-success,
+.alert{
+    padding: 20px;
+    background: #1f7e58;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 10px;
+    background: rgb(207,48,48);
+    color: white;
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    width:100px;
+    text-align: center;
+}
+
+.btn-warning{
+    background: rgb(243,162,32);
+}

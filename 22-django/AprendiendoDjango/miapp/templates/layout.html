@@ -1,0 +1,88 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf=8" />
+    <title>
+        {% block title %}
+        {% endblock %}
+        | Rubén Beltrán
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <div id="logotipo">
+            <img src="{%static 'images/logo.png' %}">
+            <h1>Sitio Web Django</h1>
+
+        </div>
+
+
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href={% url 'index' %}> Inicio </a>
+            </li>
+            <li>
+                <a href="/hola-mundo"> Hola mundo </a>
+            </li>
+            <li>
+                <a href="/articulos"> Articulos </a>
+            </li>
+            <li>
+                <a href="/pagina"> Prueba </a>
+            </li>
+            <li>
+                <a href="/create-article"> Crear Articulo </a>
+            </li>
+            <li>
+                <a href="/create-full-article"> Crear Articulo Full </a>
+            </li>
+            <li>
+                <a href={%url 'contacto' nombre='Ruben' apellidos='Beltranitossss'%}> Contacto </a>
+            </li>
+            <ul>
+    </nav>
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+
+    <div id="content">
+
+        <div class="box">
+
+            {% block content %}
+            <strong>
+                Contenido Original
+            </strong>
+            {% endblock %}
+
+        </div>
+
+    </div>
+    
+    
+    <div class="barra-footer">
+        <span class="esquina-derecha-footer"></span>
+        <span class="esquina-izquierda-footer"></span>
+        <span class="relleno-barra-footer">Beltrán Systems</span>
+    </div>
+    <footer>
+        
+        Master en Python &copy; Rubén - {%now "Y/m/d"%}
+    </footer>
+
+</body>
+
+</html>

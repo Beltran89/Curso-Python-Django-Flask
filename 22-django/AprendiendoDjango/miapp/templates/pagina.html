@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{%block title%}  Paginita {%endblock%}
+
+
+{% block content %}
+    
+    <h1 class="title"> Pagina Principal <h1>
+    <h3> Bienvenido  <h3>
+    {{block.super}} <!-- Dependiendo de donde lo ponga lo ubica en la pagina web-->
+
+    <p>{{" Creando por Rubén Beltrán"|cut:" "}}</p>
+    {{texto|default:"no hay nada"}}
+    <p> {{lista|join:', '}}</p>
+
+    {% load filters %}
+
+    {{"Ruben"|saludo|safe}}
+
+{% endblock %}
+

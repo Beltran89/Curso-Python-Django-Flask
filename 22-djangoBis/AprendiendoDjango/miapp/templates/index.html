@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{%block title%}  {{title}} {%endblock%}
+
+{% block content %}
+
+<!-- Comentario Normal-->
+{% comment 'Esto es un comentario en Django' %}
+
+<h1>hola holaaaa holaaaa </h1>
+{% endcomment %}
+
+<h1 class="title">  {{title}} </h1>
+    <p> Años hasta 2050 </p>
+    {%if nombre%}
+        <p>{{nombre}} </p>
+    {%else%}
+        <strong>NO hay nombre</strong>
+    {%endif %}
+
+<h3>Lenguajes de Programacion</h3>
+<p> prueba</p>
+<p> prueba</p>
+<ul>
+    {%for lenguaje in lenguajes%}
+        <li>{{lenguaje}}</li>
+    {%endfor%}
+    
+</ul>
+
+
+<p>{{mi_variable}}</p>
+
+{% endblock %}
